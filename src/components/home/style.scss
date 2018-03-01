@@ -1,0 +1,133 @@
+@import "~@/lib/reset.scss";
+
+.router-link-active{
+    @include text-color(#f66);
+}
+
+//过渡;
+.image-enter-active {  
+    transform: translateX(0);  
+    transition: all 1.5s ease;  
+  }  
+  .image-leave-active {  
+    transform: translateX(-100%);  
+    transition: all 1.5s ease;  
+  }  
+  .image-enter {  
+    transform: translateX(100%);  
+  }  
+  .image-leave {  
+    transform: translateX(0);  
+  } 
+
+.slide{
+    @include rect(100%,2.17rem);
+    position:relative;
+    .slideshow{
+        @include rect(100%,2.17rem);
+        .list{
+            @include rect(100%,2.17rem);
+            li{
+                position:absolute;
+                img{
+                    @include rect(100%,2.17rem);
+                }
+                .title{
+                    display: inline-block;
+                    position:absolute;
+                    @include rect(100%,0.36rem);
+                    background:rgba(0,0,0,.5);
+                    @include line-height(0.36rem);
+                    //@include background-color(#333);
+                    @include text-color(#fff);
+                    left:0;
+                    bottom:0;
+                    text-indent: 22px;
+                    font-size:0.14rem;
+                    //opacity: .5;
+                    i{
+                        display: inline-block;
+                        @include rect(82%,0.36rem);
+                        @include line-height(0.36rem);
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                };
+                .pages{
+                    display: inline-block;
+                    position:absolute;
+                    @include rect(10%,0.36rem);
+                    @include line-height(0.36rem);
+                    @include text-color(#fff);
+                    font-size:0.14rem;
+                    right:0;
+                    bottom:0;
+                    i{
+                        font-size:20px;
+                    }
+                }
+            }
+        }
+    }
+//  .bar {  
+//      position: absolute;  
+//      @include rect(30%,0.26rem)  
+//      bottom: 10px;  
+//      right:0px;
+//      margin: 0 auto;  
+//      z-index: 10;    
+//      span {  
+//          @include rect(10px,10px);  
+//          border-radius: 5px; 
+//          @include background-color(#fff);  
+//          display:inline-block;  
+//          margin-right: 10px;  
+//        } 
+//        .active {  
+//          background: red !important;  
+//        } 
+//    }
+}
+.hotMatch{
+    overflow: visible;
+    @include rect(100%,0.6rem);
+    @include border(2px 0 2px 0,#cecece);
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items();
+    div{
+        //height:0.4rem;
+        //@include line-height(0.4rem);
+        font-size:16px;
+        @include text-color(#0FB9EF);
+    }
+    
+}
+.news{
+    padding:10px;
+    .newsList{
+        li{
+            @include rect(100%,1.8rem);
+            padding:10px 0;
+            @include border(0 0 1px 0,#cecece);
+            .cnt_top{
+                margin-bottom:5px;
+                @include rect(100%,0.5rem);
+            }
+            .cnt_middle{
+                @include rect(100%,0.8rem);
+                @include flexbox();
+                @include justify-content(space-between);
+                margin-bottom:10px;
+                img{
+                    @include rect(1.16rem,0.77rem);
+                }
+            }
+            .cnt_bottom{
+                font-size:10px;
+                @include text-color(#cecece);
+            }
+        }
+    }
+}

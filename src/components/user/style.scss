@@ -1,0 +1,33 @@
+@import "~@/lib/reset.scss";
+@import '../../iconfont/iconfont.css';
+.router-link-active{
+    @include text-color(#f66);
+}
+.cnt_top{
+    @include rect(100%,1.6rem);
+    @include background-color(#f66);
+    @include text-color(#fff);
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content();
+    @include align-items();
+    i{
+        font-size:60px;
+    }
+    .user{
+        span{
+            font-size:18px;
+        }
+    }
+}
+.cnt_bottom{
+    @include rect(100%,auto);
+    .box{
+        @include rect(100%,0.5rem);
+        @include border(0 0 1px 0,#cecece);
+        padding:0 10px;
+        @include line-height(0.5rem);
+        @include flexbox();
+        @include justify-content(space-between);
+    }
+}

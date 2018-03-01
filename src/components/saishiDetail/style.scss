@@ -1,0 +1,113 @@
+@import '~@/lib/reset.scss';
+
+.router-link-active{
+    //@include background-color(#cecece);
+   // @include text-color(#f66);
+}
+
+.wrap{
+    @include rect(100%,100%);
+    //@include flexbox();
+    //@include flex-direction(column);
+   //@include justify-content(space-between);
+     .fanhui{
+           display:block;
+           @include rect(0.44rem,0.44rem);
+           @include line-height(0.44rem);
+           @include text-align();
+           position:absolute;
+           top:0;
+           left:0;
+           z-index:10;
+           @include text-color(#fff);
+       }
+
+    .bisaiHeader{
+        @include rect(100%,1.78rem);
+        background:url(../../assets/bg.jpg) no-repeat center/cover;
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-items();
+        position:fixed;
+        top:0;
+        left:0;
+        .detail{
+            @include rect(1.5rem,100%);
+            @include text-color(#fff);
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            @include align-items();
+            .score{
+                @include rect(1.5rem,0.3rem);
+                font-size:0.2rem;
+                .sj{
+                    float:left;
+                    @include rect(0.3rem,0.3rem);
+                    @include line-height(0.3rem);
+                    @include text-align();
+                }
+                .home_score{
+                    margin-left:0.3rem;
+                }
+            }
+            .zhibo{
+                background:#00B7FF;
+                padding:0.06rem;
+                border-radius: 0.06;
+            }
+        }
+        .team{
+            @include rect(1rem,0.81rem);
+            @include text-color(#fff);
+            @include flexbox();
+            @include flex-direction(column);
+            .logo{
+                @include rect(0.4rem,0.4rem);
+                margin-bottom:15px;
+                margin-left:0.3rem;
+                img{
+                    @include rect(0.4rem,0.4rem);
+
+                }
+            }
+            .name{
+                @include rect(1rem,0.26rem);
+                @include line-height(0.26rem);
+                @include text-align();
+            }
+        }
+    }
+    .jieshuo{
+        @include rect(100%,100%);
+        overflow: auto;
+        position:absolute;
+        top:1.78rem;
+        left:0;
+        padding:20px 16px;
+        .list{
+            width:100%;
+            li{
+               width:100%;
+               .score_jie{
+                   @include rect(100%,0.4rem);
+                   @include flexbox();
+                   @include justify-content(space-between);
+                   @include text-color(#cecece);
+                   padding:0 0.1rem;
+                   div{
+                       @include line-height(0.4rem);
+                   }
+               } 
+               .cnt1{
+                   @include rect(100%,auto);
+                   @include background-color(#e5e5e5);
+                   @include line-height(0.4rem);
+                   @include text-color(#666);
+                   padding:0 0.1rem;
+               }
+            }
+        }
+    }
+}
+

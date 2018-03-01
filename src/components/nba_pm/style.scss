@@ -1,0 +1,69 @@
+@import '~@/lib/reset.scss';
+
+.router-link-active{
+    @include text-color(#f66);
+}
+.nba_pm{
+    @include rect(100%,100%);
+    padding:10px 20px;
+    overflow: auto;
+    .pmHeader{
+       @include rect(100%,0.5rem); 
+       ul{
+           @include flexbox();
+           @include justify-content(space-between);
+           @include align-items();
+           font-weight: 800;
+           .pm{
+               margin-right:0.8rem;
+           }
+           .sc{
+               margin-right:6px;
+           }
+       }
+    }
+    .pmDetail{
+        ul{
+            li{
+                @include flexbox();
+                @include justify-content(space-between);
+               // @include align-items();
+                @include rect(100%,0.5rem);
+                .mingci{
+                    @include rect(0.2rem,0.5rem);
+                }
+                .active{
+                    @include text-color(#f66);
+                }
+                .logo{
+                    @include rect(0.22rem,0.22rem);
+                    img{
+                        @include rect(0.22rem,0.22rem);
+                    }
+                }
+                .name{
+                    
+                    @include rect(0.56rem,0.5rem);
+                    //@include text-align();
+                }
+                .win{
+                    margin-left:10px;
+                    @include rect(0.2rem,0.5rem);
+                    @include text-align();
+                }
+                .lose{
+                    @include rect(0.2rem,0.5rem);
+                    @include text-align();
+                }
+                .shenglv{
+                    @include rect(0.45rem,0.5rem);
+                    @include text-align();
+                }
+                .shengcha{
+                    @include rect(0.35rem,0.5rem);
+                    @include text-align();
+                }
+            }
+        }
+    }
+}

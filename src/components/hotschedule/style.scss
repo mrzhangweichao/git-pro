@@ -1,0 +1,64 @@
+@import "~@/lib/reset.scss";
+@import '../../iconfont/iconfont.css';
+.router-link-active{
+    @include text-color(#f66);
+}
+.hotschedule{
+    @include rect(100%,auto);
+    .hotlist{
+        @include rect(100%,auto);
+        li{
+            @include rect(100%,0.82rem);
+            @include border( 0 0 1px 0,#666);
+            @include flexbox();
+            @include justify-content(space-around);
+            @include align-items();
+            .box{
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-around);
+                //@include align-items(space-around)
+            }
+            .tt{
+                width:0.66rem;
+                .scheduleName{
+                    font-size:12px;
+                    @include text-color(#cecece);
+                }
+            }
+            .team{
+                width:1.2rem;
+                .teams{
+//                  @include flexbox();
+//                  @include flex-direction();
+//                  @include justify-content(space-between);
+                    .teamLogo{
+                        float:left;
+                        margin-right:10px;
+                        @include rect(0.22rem,0.22rem);
+                        img{
+                            @include rect(0.22rem,0.22rem);
+                        }
+                    }
+                    .teamName{
+                        float:left;
+                        text-indent:0;
+                    }
+                }
+            }
+            .scroe{
+                width:0.35rem;
+            }
+            .state{
+                width:0.7rem;
+                @include flex-direction();
+                @include text-color(#666);
+                .video{
+                    @include rect(0,0);
+                    border-width:transparent transparent transparent 20px;
+                    border-color:#333;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "~@/lib/reset.scss";
+
+.router-link-active{
+    @include text-color(#f66);
+    text-decoration: underline;
+}
+.header{
+    @include rect(100%,0.44rem)
+    @include text-color(#666);
+    @include flexbox();
+    justify-content:space-around;
+    @include align-items();
+    @include border(0 0 1px 0,#cecece);
+    span{
+        display:block;
+        @include rect(0.5rem,0.43rem);
+        @include line-height(0.43rem);
+        @include text-align();
+    }
+}

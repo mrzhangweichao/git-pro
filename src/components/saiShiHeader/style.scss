@@ -1,0 +1,27 @@
+@import "~@/lib/reset.scss";
+
+.router-link-active{
+    @include text-color(#f66);
+}
+
+.header{
+    @include rect(100%,0.44rem);
+    h1{
+        @include rect(100%,0.44rem);
+        @include background-color(#E5E5E5);
+        @include line-height(0.44rem);
+//      @include text-align();
+        padding:0 20px;
+        b{
+            float:left;
+            @include rect(0.44rem,0.44rem);
+            @include line-height(0.44rem);
+            @include text-align();
+            margin-right:0.9rem;
+        }
+        span{
+            
+            @include text-color(#f66);
+        }
+    }
+}

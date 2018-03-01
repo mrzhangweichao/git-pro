@@ -1,0 +1,22 @@
+@import '~@/lib/reset.scss';
+
+.router-link-active{
+    @include text-color(#f66);
+    text-decoration: underline;
+}
+.dataCnt{
+   @include rect(100%,100%);
+    
+   .title{
+        
+        @include rect(100%,0.4rem);
+        @include border(0 0 1px 0,#cecece);
+        @include flexbox();
+        padding:0 0.5rem;
+        @include justify-content(space-around);
+        @include align-items();
+        @include background-color(#e5e5e5);
+    }
+}
+
+

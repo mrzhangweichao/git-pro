@@ -1,0 +1,51 @@
+@import '~@/lib/reset.scss';
+
+.router-link-active{
+    @include text-color(#f66);
+}
+
+.wrap{
+    overflow: auto;
+    @include rect(100%,100%);
+    //padding:10px 0;
+    
+    .list{
+        //@include background-color(#eee);
+        padding:0 0 10px 0 ;
+        @include border(0 0 1px 0,#cecece);
+        @include rect(100%,1.5rem);
+        @include flexbox();
+        @include flex-direction(column);
+        .datatype{
+            @include rect(100%,0.3rem);
+            @include line-height(0.3rem);
+            @include text-align();
+            //@include border(0 0 1px 0,#cecece);
+            font-weight:900;
+            @include text-color(#000);
+            margin-bottom:10px;
+        }
+        .xbox{
+            @include rect(100%,1.2rem);
+             @include flexbox();
+             margin-bottom:10px;
+            .detail{
+                //@include rect(33.3%,1.2rem);
+                @include rect(1.25rem,1rem);
+                @include justify-content(space-around);
+                @include text-align();
+                .type{
+                    margin-bottom:5px;
+//                  img{
+//                      @include rect(0.2rem,0.2rem);
+//                  }
+                }
+                .active{
+                    @include text-color(#f66);
+                }
+            }
+        }
+        
+        
+    }
+}

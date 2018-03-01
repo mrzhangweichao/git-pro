@@ -1,0 +1,15 @@
+@import "~@/lib/reset.scss";
+
+.router-link-active{
+    @include text-color(#f66);
+}
+
+.total_header{
+    @include rect(100%,0.44rem);
+    @include border(0 0 2px 0,#cecece);
+    span{
+      font-weight:800;
+      font-size:16px;
+      margin-right:20px;   
+    }
+}

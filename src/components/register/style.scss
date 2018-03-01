@@ -1,0 +1,56 @@
+@import "~@/lib/reset.scss";
+@import '../../iconfont/iconfont.css';
+.router-link-active{
+    @include text-color(#f66);
+}
+
+.mint-cell{
+    //@include border(0 0 1px 0, #ccc, solid);
+}
+
+.registerBtn{
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+a[data-v-933a7c6e]{
+    color:#666 ;
+}
+.content{
+    padding:50px 15px;
+    span{
+        display:block;
+        width:16px;
+        height:16px;
+        border:1px solid #cecece;
+        line-height:16px;
+        text-align:center;
+        border-radius: 50%;
+        color:#cecece;
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+    b{
+        margin-top:20px;
+        font-weight:100;
+        color:#00B7FF;
+        text-decoration: underline;
+        
+    }
+}
+//.mint-button{
+//
+//}
+
+
+//#register{
+//  @include flexbox();
+//  @include flex-direction(column);
+//  @include align-items();
+//  img{
+//      @include rect(1.5rem, 100%); 
+//  }
+//  a{
+//      @include rect(100%,0.44rem);
+//  }
+//}

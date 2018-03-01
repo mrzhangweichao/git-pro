@@ -1,0 +1,30 @@
+//所有需要管理的组件的状态；
+
+export default{
+	homeNews1:[],
+	homeNews3:[],
+	homeNews6:[],
+	banner:[],
+	scheduleList:[],
+	scheduleAll:[],
+	football:[],
+	basketball:[],
+	test:"",
+	name1:"",
+	name2:"",
+	basketImg:[],
+	footImg:[],
+	saiShi:[],
+	nbaPm:[],
+	nbaEastPm:[],
+	nbaWestPm:[],
+	nbaTj:[],
+	nbaTongj:[],
+	xjPm:[],
+	xjTj:[],
+	xjTongj:[],
+	guanzhu:[],
+	guanzhuImg:[],
+	vedioList:[],
+	jieshuo:[]
+}

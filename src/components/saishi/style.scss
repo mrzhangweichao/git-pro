@@ -1,0 +1,90 @@
+@import '~@/lib/reset.scss';
+
+.router-link-active{
+  //  @include background-color(#cecece);
+   // @include text-color(#f66);
+}
+
+.wrap{
+    overflow: auto;
+    @include flexbox();
+    @include flex-direction(column);
+    .header{
+        @include rect(100%,0.44rem);
+        h2{
+            @include rect(100%,0.44rem);
+            @include background-color(#cecece);
+            @include text-align();
+            @include line-height(0.44rem);
+        } 
+    }
+    .saishi_content{
+        @include flex();
+        @include rect(100%,auto);
+        .saishiNo{
+            @include text-align();
+            padding:20px;
+            font-size:0.20rem;
+            @include text-color(#666);
+        }
+        .list{
+            @include rect(100%,100%);
+            li{
+                padding:10px;
+                @include rect(100%,1.5rem);
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-around);
+                @include align-items();
+                @include border(0 0 1px 0,#ccc);
+                .bottom{
+                    width:100%;
+                    @include flexbox();
+                    @include justify-content(space-around);
+                    .team{
+                        width:1rem;
+                        @include flex-direction(column);
+                        @include justify-content(space-between);
+                        @include align-items();
+                        .teamLogo{
+                            margin-left:0.35rem;
+                            @include rect(0.3rem,0.3rem);
+                            margin-bottom:10px;
+                            img{
+                                
+                                @include rect(0.3rem,0.3rem);
+                            }
+                        }
+                        .teamName{
+                            @include flexbox();
+                            @include justify-content();
+                        }
+                    }
+                    .score{
+                        width:0.8rem;
+                        @include flexbox();
+                        @include flex-direction(column);
+                        @include justify-content();
+                        @include align-items(center);
+                        .sbox2{
+                           margin-top:10px;
+                           @include flexbox();
+                           @include justify-content(); 
+                           span{
+                               display: block;
+                               @include rect(0.6rem,0.3rem);
+                               @include border(2px 2px 2px 2px,#0086B3);
+                               @include line-height(0.3rem);
+                               @include text-align();
+                               @include text-color(#0086B3);
+                               border-radius:0.15rem;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+           
+}
+

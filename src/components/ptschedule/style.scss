@@ -1,0 +1,50 @@
+@import "~@/lib/reset.scss";
+
+.router-link-active{
+    @include text-color(#f66);
+}
+.ptschedule{
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content();
+    @include rect(100%,100%);
+    .xbox{
+        .titleName{
+            @include rect(100%,0.3rem);
+            background:#E5E5E5;
+            @include line-height(0.3rem);
+            padding-left:0.2rem;
+        }
+        .list{
+            @include rect(100%,100%);
+            li{
+                 @include flexbox();
+                 padding:20px;
+                 @include border(0 0 1px 0,#ccc);
+                .logo{
+                    @include rect(0.24rem,0.23rem);
+                    margin-right:0.2rem;
+                    img{
+                        @include rect(0.24rem,0.23rem);
+                    }
+                }
+                .name{
+                    @include rect(0.5rem,0.3rem);
+                    margin-right:1.4rem;
+                }
+                .num{
+                   @include rect(2rm,0.3rem);
+                    @include text-color(#0086B3);
+                }
+            }
+        }
+    }
+    .baskeball{
+        margin-top:1.87rem;
+        //@include rect(100%,1.5rem);
+    }
+    .football{
+        //@include flex();
+        //@include rect(100%,auto);
+    }
+}
